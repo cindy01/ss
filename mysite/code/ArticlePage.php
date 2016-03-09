@@ -21,7 +21,9 @@ class ArticlePage extends Page{
 	public function getCMSFields(){
 		$fields = parent::getCMSFields();
 		 $fields->addFieldToTab('Root.Main', DateField::create('Date','Date of article')
-          ->setConfig('showcalendar', true)->setConfig('datavalueformat', 'dd/MM/yyyy'),'Content');
+          ->setConfig('showcalendar', true)
+          /*->setConfig('datavalueformat', 'dd/MM/yyyy')*/
+          ,'Content');
 		$fields->addFieldToTab('Root.Main', TextareaField::create('Teaser')->setDescription('Display in the section'),'Content');
 		$fields->addFieldToTab('Root.Main', TextField::create('Author','Articl of author'),'Content');
 
@@ -42,4 +44,10 @@ class ArticlePage extends Page{
 
 }
 
+
+class AriclePage_Controller extends Page_Controller{
+
+
+	
+}
 

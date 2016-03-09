@@ -1,8 +1,7 @@
 <h1>$Title</h1>
-$Date.Nice 
+$Date.Long <% if $Author %> | $Author <% end_if %>
 
-
-<!-- | $Date.Long | $Date.NiceUS | $Date.Formate("DD/MM/YYYY")-->
+<!-- $Date.Nice | $Date.Long | $Date.NiceUS | $Date.Formate("DD/MM/YYYY")-->
 
 <hr>
 
@@ -71,5 +70,10 @@ Latest News
 <p><a href="$Link" class="$LinkingMode">$Title</a></p>
     <% end_if %>
 <% end_loop %>
+
+<% loop $LatestArticles(5) %>
+<p><a href="$Link" class="$LinkingMode">$MenuTitle</a><br/>$Content.FirstParagraph</p>
+<% end_loop %>
+
 
 $Form
