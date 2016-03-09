@@ -1,15 +1,21 @@
 <% loop $Children %>
+
+<% if $Photo %>
+	<p>
+	<% with $Photo.SetWidth(200) %>
+	<img src="$URL" width="$Width" height="$Height" class="my-custom-class">
+	<% end_with %> 
+	</p>
+<% end_if %>
+
 <p><a href="$Link" class="$LinkingMode">$Title</a></p>
-$Content
-<% end_loop %>
+
+    
+$Content.LimitCharacters(100)
 
 <hr>
-
-
-<% loop $AllChildren %>
-<p><a href="$Link" class="$LinkingMode">$Title</a></p>
-$Content
 <% end_loop %>
+
 
 
 $Form

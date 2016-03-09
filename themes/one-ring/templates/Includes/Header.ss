@@ -1,5 +1,5 @@
 <% loop $Menu(1) %>
-<a href="$Link" title="$MenuTitle" class="$LinkingMode">$MenuTitle</a>
+<a href="$Link" title="$MenuTitle" class="$LinkingMode">$MenuTitle</a> &nbsp;
 <% end_loop %>
 
 <hr>
