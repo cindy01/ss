@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "1cd36c269979d86379780225e43d749c",
-    "content-hash": "1626c28f3500b54461eb041dbd9cdeb8",
+    "hash": "c9f85b38c5fc4c3a7f47aa6eb3d90d53",
+    "content-hash": "66766665a10b667f12b6d672ff2d71c0",
     "packages": [
         {
             "name": "composer/installers",
@@ -104,6 +104,48 @@
                 "zikula"
             ],
             "time": "2016-01-27 12:54:22"
+        },
+        {
+            "name": "jeffwhitfield/silverstripe-bootstrap-theme",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jeffwhitfield/silverstripe-bootstrap-theme.git",
+                "reference": "3fc329974b150d0c9ead7c51ac5c73d4e1023737"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jeffwhitfield/silverstripe-bootstrap-theme/zipball/3fc329974b150d0c9ead7c51ac5c73d4e1023737",
+                "reference": "3fc329974b150d0c9ead7c51ac5c73d4e1023737",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "*",
+                "silverstripe/framework": ">=3.0"
+            },
+            "replace": {
+                "jeffwhitfield/silverstripe-bootstrap-theme": "*"
+            },
+            "type": "silverstripe-theme",
+            "extra": {
+                "installer-name": "bootstrap"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Jeff Whitfield",
+                    "homepage": "http://thejeffwhitfield.com"
+                }
+            ],
+            "description": "A SilverStripe Bootstrap theme that incorporates HTML5 Boilerplate, Twitter Bootstrap, and Font Awesome",
+            "keywords": [
+                "silverstripe",
+                "theme"
+            ],
+            "time": "2014-02-28 21:39:53"
         },
         {
             "name": "silverstripe-themes/simple",
@@ -757,7 +799,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "jeffwhitfield/silverstripe-bootstrap-theme": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

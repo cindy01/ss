@@ -9,7 +9,8 @@ class Region extends Dataobject(){
 		);
 
 	private static $has_one = array(
-		'Photo' => 'Image'
+		'Photo' => 'Image',
+		'RegionsPage' => 'RegionsPage'
 		);
 
 	public functon getCMSFields(){
